@@ -77,14 +77,12 @@ details:hover
 
 .return{
     text-align: center;
-    width:100%;
 }
 
 .return a{
     background-color:#74798a;
     padding: 0.5em;
     border-radius:30px;
-    margin-top:0.75rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -95,12 +93,11 @@ details:hover
         max-width: 100%;
         padding-right: 2.5%;
     }
-
     pre
     {
         display: none;
     }
-
+    
     .content li{
         padding-top: 5%;
     }
@@ -110,8 +107,7 @@ details:hover
     }
 
     .return{
-        margin-top:1.5rem;
+        margin-top:3rem;
         margin-bottom: 1rem;
     }
-
   }
