@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Mike OS</title>
+    <link href="../stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="titlebar" style="text-align:center;"><h3>[MikeOS - /Home/Skills/] - New Terminal Window</h3></div>
+    <div class="content">
+      <div class="return"><a href="../index.html">Press Here to Return to Home</a></div>
+        <pre><p style="color:darkturquoise;">
+          888b     d888 8888888 888    d8P  8888888888        .d88888b.   .d8888b.  
+          8888b   d8888   888   888   d8P   888              d88P" "Y88b d88P  Y88b 
+          88888b.d88888   888   888  d8P    888              888     888 Y88b.      
+          888Y88888P888   888   888d88K     8888888          888     888  "Y888b.   
+          888 Y888P 888   888   8888888b    888              888     888     "Y88b. 
+          888  Y8P  888   888   888  Y88b   888              888     888       "888 
+          888   "   888   888   888   Y88b  888              Y88b. .d88P Y88b  d88P 
+          888       888 8888888 888    Y88b 8888888888        "Y88888P"   "Y8888P"              
+        </p></pre>
+        <details id="Note">
+          <summary>Important Note</summary>
+          <p>Through a service called Immersive Labs (I'll now refer to it as IL), I was given access to a vast quantity of training labs. This site creates practical example scenarios in which you must complete challenges within a virtual environment, like a Capture-The-Flag but for Blue Teamers and Defensive minded individuals. On Immersive Labs there are hundreds of Labs, with everything I could need and more so, expect to see it mentioned a lot! As someone with relatively low exposure to the Cyber industry, these labs have allowed me to gain almost industry level experience and skills with some tools and experience using them in simulated scenarios, which I wouldn't have been exposed to otherwise!</p>
+        </details>
+
+        <p>User@MikeOS:~/Home/Skills/$ cat Skills_Blue_Team.txt</p>
+        <p><span style="color:darkturquoise">Blue</span> Team Skills:</p>
+        
+        <details>
+          <summary>Log Reading and Analysis</summary>
+          <p>Working as a Cyber Security Analyst, I have read a lot of logs and have a good eye for spotting behaviour that deviates from what is expected and classes as 'business as usual'. I can read both Windows and Linux logs (important as the main two OS families) and interpret what has happened whether that be a password change or a file download.</p>
+          <p>I have also seen a lot of Cloud Service logs, whether that be AWS or Azure and have dealt with logs from both. Using the information provided to me from the logs I am able to make intelligent and informed decisions to reach an optimal conclusion whether that be interacting with the user/developer responsible, or when neccessary, escalating to Incident Co-Ordinator.</p>
+          <p>Due to my degree borrowing its structure from the Cisco CCNA I have a very solid background in networks, most specifically protocols such as DNS, TCP, HTTP, LDAP and DHCP. I have read all types of protocol based logs and diagnosed malicious behaviour in each of them in the past. For example, I am able to very easily spot attempts at attacks such as Log4J exploitation in Web and LDAP logs.</p>
+        </details>
+
+        <details>
+          <summary>SIEM Tools</summary>
+          <p>I have worked in multiple SIEM tools to sift through logs using relevant information found in detections to create a bigger picture of an incident and create a mental timeline of an incident from true destination (when possible) all the way through to true destination. I have created, updated and improved SIEM alerts and detections to detect new threats, optimise current detections and reduce false positive triggers.</p> 
+          <p>One project I have lead in the SIEM area was to create an incident forwarder. The forwarder would take alerts of a specified source type and generate a security ticket with them in another application through a automatically generated email. SOAR tools are another area to which I have had some exposure. SOAR tools allowed me to make some basic playbooks to automate some of my duties and find ways to innovate the way in which I work.</p>
+        </details>
+
+        <details>
+          <summary>Incident Response</summary>
+          <p>I have been apart of real security incidents such as suspected security breaches and followed the threat throughout it's life cycle (from detection to remediation). As a SOC analyst I have personally detected many live threats. One important skill I picked up as part of this role is curiosity, I now always work out a bigger picture of not only what I can see in the tickets and what that means for the incident, but what else is going on behind the scenes such as related attacks, campaigns and other connections from Source and Destination.</p>
+          <p>After escalating threats to the neccessary parties, I would first build a picture of what has happened (download of malicious file, credentials phished or information leaked). Next, I would work out how this happened (phishing email or policy violation). I would then investigate the compromised host or account and see if there is any other behaviour that is out of the ordinary. Now I would isolate or contain the affected device or account (Lock the account or device through service provider like Active Directory). If possible I would eradicate any threats through Anti-Malware systems or complete wipes of systems. In some cases I would then request the device for detailed forensics on the incident.</p>
+          <p>I have worked on many incidents such as active malware, phishing links clicked (not always with credentials leaked but had to prove this using logs) and live hacking machines (Kali) on the network and dealing with that appropriately. As part of this role I spent a lot of time verifying if a targetted system was susceptible to the attack that was attempted via software inventory and searching vulnerable software and CVEs.</p>
+        </details>
+        
+        <details>
+          <summary>Intrusion Detection/Prevention Systems</summary>
+          <p>During my time working as an Incident Responder (temporarily), I was able to become very familiar working with Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS). These systems show attacks that have managed to breach external firewalls and have managed to make it far enough into the network. The rule is that if an incident shows on IDS you should assume it was successful. However the purpose of IPS is that it has prevented the attack.</p>
+          <p>These systems feed their information into the SIEM and generate alerts into tickets, using the provided information I would then determine what the intended target was (in some cases this would show as a load balancer and I would have to work out the devices in the load balanced pool) and determine if the threat could have been successful, if so I would then escalate the alert to the Incident manager and wait for my next steps. Due to the experience I have gained in this area I am now confident dealing with information and alerts that come from IDS/IPS devices and can use them as a really useful information source.</p>
+        </details>
+
+        <details>
+          <summary>Firewall/Web Traffic Logs</summary>
+          <p>I have used Firewalls and Web Traffic logs as an aide in the process of investigation and triage of intial threats, I have used them to work out what a user or suspicious IP address was doing around the time that an alert was triggered or for use as data enrichment in further investigations.</p>
+          <p>I was able to check whether or not packets had made it past the perimeter firewall and whether or not further traffic has been blocked or denied. Another good use of these skills was to review whether a user was able to successfully send a POST request after clicking a malicious phishing link. Web logs also came in handy as enrichment data to work out whether a user visting a suspicious/strange (scams etc) website coincide with their web history.</p>
+          <p>One important area that merges the two topics of this section is Web Application Firewalls (WAF) which are firewalls sitting further up the OSI model at Layer 7 (Application Layer). WAFs monitor traffic going towards web applications and have the ability to prevent attacks and exploits if they are spotted by dropping the packets. I have been able to use WAF logs in investigations to work out if an attack was successful and follow the correct procedures from that point onwards to remediate threat or provide rationale for closing a ticket.</p>
+        </details>
+
+        <details>
+        <summary>Wireshark</summary>
+        <p>During my time as a Cyber Security Analyst and through my own research, I have gained experience with Packet Analysis. I have been able to use it for investigations such as:</p>
+        <p style="margin-left:2.5%;color: cornflowerblue;">Finding the source of a security breach.</p>
+        <p style="margin-left:2.5%;color: cornflowerblue;">To take inventory of affected devices.</p>
+        <p style="margin-left:2.5%;color: cornflowerblue;">For Malware behavioural analysis.</p>
+        <p style="margin-left:2.5%;color: cornflowerblue;">Getting a better understanding of Encryption and Protocols like SSL, TLS, TCP, HTTP and many more.</p>
+        <p>Using IL, I have been able to simulate real world attack scenarios such as a machine infected with Emotet malware, find the source of compromise on the current machine and investigate the system using information found with in a .pcap file (packet capture), including the user who caused the issue and the machine on which it took place.</p>
+        <p>Wireshark has it's own search/filtering feature with its own syntax, I feel confident using it, thanks to my programming and query writing experience. I have used this to aid me in investigations, querying different protocols and their properties to find out key information like file that have been transferred, username and passwords.</p>
+        <p>I have also used tshark (CLI Wireshark) from a BASH window, to quickly create a search on a .pcap file and understand the events of the file, however I am more comfortable with the Wireshark GUI.</p>
+        </details>
+        <p style="color:cornflowerblue;">Using YARA to perform malware pattern matching</p>
+      </body>
