@@ -2,7 +2,7 @@
 body
 {
     background-color: #393e4d;
-    font-family:'Lucida Console';
+    font-family:'Inconsolata';
     color: ghostwhite;
     margin: 0px auto;
 }
@@ -17,7 +17,7 @@ body
 .content
 {
     top:7.5%;
-    width:auto;
+    width: 100%;
     height: fit-content;
     position:absolute;
 }
@@ -77,12 +77,14 @@ details:hover
 
 .return{
     text-align: center;
+    width:100%;
 }
 
 .return a{
     background-color:#74798a;
     padding: 0.5em;
     border-radius:30px;
+    margin-top:0.75rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -96,8 +98,7 @@ details:hover
 
     pre
     {
-        font-size: 0.35rem;
-        margin-left: 0%;
+        display: none;
     }
 
     .content li{
@@ -110,6 +111,7 @@ details:hover
 
     .return{
         margin-top:1.5rem;
+        margin-bottom: 1rem;
     }
 
   }
