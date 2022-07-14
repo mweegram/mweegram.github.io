@@ -1,0 +1,115 @@
+
+body
+{
+    background-color: #393e4d;
+    font-family:'Lucida Console';
+    color: ghostwhite;
+    margin: 0px auto;
+}
+
+.titlebar
+{
+    background-color: #74798a;
+    width:100%;
+    position: absolute;
+}
+
+.content
+{
+    top:7.5%;
+    width:auto;
+    height: fit-content;
+    position:absolute;
+}
+
+.content p
+{
+    color: lightgray;
+    padding-left: 2.5%;
+    font-weight: 550;
+    max-width: 50%;
+}
+
+li
+{
+    padding-left: 5%;
+    font-weight: 550;
+    max-width: 20%;
+    display: block;
+    text-align: center;
+    padding-left: 32px;
+    padding-right:16px;
+    text-decoration: none;
+    float: left;
+
+}
+
+.content ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    color:limegreen;
+}
+
+a
+{
+    color: limegreen;
+}
+
+a:hover
+{
+    color: red;
+}
+
+details
+{
+    padding-left:3%;
+    color: cornflowerblue;
+    margin-bottom:2em;
+}
+
+details:hover
+{
+    color:red;
+}
+
+.return{
+    text-align: center;
+}
+
+.return a{
+    background-color:#74798a;
+    padding: 0.5em;
+    border-radius:30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content p {
+        color: lightgray;
+        padding-left: 2.5%;
+        font-weight: 550;
+        max-width: 100%;
+        padding-right: 2.5%;
+    }
+
+    pre
+    {
+        font-size: 0.35rem;
+        margin-left: 0%;
+    }
+
+    .content li{
+        padding-top: 5%;
+    }
+
+    .content .text{
+        display: none;
+    }
+
+    .return{
+        margin-top:1.5rem;
+    }
+
+  }
