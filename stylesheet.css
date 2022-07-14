@@ -86,6 +86,14 @@ details:hover
 }
 
 @media only screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+        height: fit-content;
+        position:absolute;
+        top:12.5%;
+        padding-bottom:5%;
+    }
+
     .content p {
         color: lightgray;
         padding-left: 2.5%;
@@ -100,10 +108,6 @@ details:hover
     
     .content li{
         padding-top: 5%;
-    }
-
-    .content .text{
-        display: none;
     }
 
     .return{
