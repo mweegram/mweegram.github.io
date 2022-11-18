@@ -47,6 +47,12 @@
           <p>After escalating threats to the neccessary parties, I would first build a picture of what has happened (download of malicious file, credentials phished or information leaked). Next, I would work out how this happened (phishing email or policy violation). I would then investigate the compromised host or account and see if there is any other behaviour that is out of the ordinary. Now I would isolate or contain the affected device or account (Lock the account or device through service provider like Active Directory). If possible I would eradicate any threats through Anti-Malware systems or complete wipes of systems. In some cases I would then request the device for detailed forensics on the incident.</p>
           <p>I have worked on many incidents such as active malware, phishing links clicked (not always with credentials leaked but had to prove this using logs) and live hacking machines (Kali) on the network and dealing with that appropriately. As part of this role I spent a lot of time verifying if a targetted system was susceptible to the attack that was attempted via software inventory and searching vulnerable software and CVEs.</p>
         </details>
+
+        <details>
+          <summary>Endpoint Detection and Response (EDR) Tools</summary>
+          <p>During my time as a SOC analyst I have accumulated experience in multiple different EDR tools using the details and information provided to make intelligent decisions about what data sources to check and what the bigger picture of the alert is. I have experience using the information provided by the EDR tools to effectively alleviate the threat or determine that it was false positive. While working with EDR tools I have had to create manual exceptions to exclude particular IOCs from alerts, as they were false positives and causing huge amounts of wasted alerts (50-100 per day) thus saving a lot of analyst time.</p>
+          <p>I have integrated EDR tools into a ticketing system through SIEM alerting which allowed me to streamline and optimise the workflow of the other SOC analysts. Centralising the EDR tools to a particular ticketing system allowed analysts to focus their time and energy in one place as opposed to needing to check many different portals. In this process I had to deal with different types of events some of which provided different information than others.</p>
+        </details>
         
         <details>
           <summary>Intrusion Detection/Prevention Systems</summary>
@@ -60,6 +66,12 @@
           <p>I was able to check whether or not packets had made it past the perimeter firewall and whether or not further traffic has been blocked or denied. Another good use of these skills was to review whether a user was able to successfully send a POST request after clicking a malicious phishing link. Web logs also came in handy as enrichment data to work out whether a user visting a suspicious/strange (scams etc) website coincide with their web history.</p>
           <p>One important area that merges the two topics of this section is Web Application Firewalls (WAF) which are firewalls sitting further up the OSI model at Layer 7 (Application Layer). WAFs monitor traffic going towards web applications and have the ability to prevent attacks and exploits if they are spotted by dropping the packets. I have been able to use WAF logs in investigations to work out if an attack was successful and follow the correct procedures from that point onwards to remediate threat or provide rationale for closing a ticket.</p>
         </details>
+        
+        <details>
+          <summary>Experience Securing Cloud Environments</summary>
+          <p>I have experience securing and monitoring cloud environments and triaging detections as they occur. I have worked security tickets in most of the major cloud services, with experience monitoring deployments, logs and image shares for malicious behaviour. Due to the expansive nature of cloud work I have been able to use information provided to me through logs to find a security contact and bring issues to their attention. </p>
+          <p>With cloud computing being so dynamic, there was a lot of SIEM alerting to configure and create as well as a lot of false positives to tune out. I have experience working over many data types, service providers and protocols simultaneously, using all information to make informed conclusions.</p>
+        </details>
 
         <details>
         <summary>Wireshark</summary>
@@ -72,5 +84,9 @@
         <p>Wireshark has it's own search/filtering feature with its own syntax, I feel confident using it, thanks to my programming and query writing experience. I have used this to aid me in investigations, querying different protocols and their properties to find out key information like file that have been transferred, username and passwords.</p>
         <p>I have also used tshark (CLI Wireshark) from a BASH window, to quickly create a search on a .pcap file and understand the events of the file, however I am more comfortable with the Wireshark GUI.</p>
         </details>
-        <p style="color:cornflowerblue;">Using YARA to perform malware pattern matching</p>
+        
+        <details>
+          <summary>YARA</summary>
+          <p>Using IL, I have been able to gain experience in using Yara to create rulesets/regular expressions to detect and indentify malicious software. Although I have not yet had chance to use Yara at work, the applications of the software in a SOC environment are plentiful. Yara can be used to help an Incident Responder determine what software has been downloaded onto a client machine. Yara can also be used as a proactive defense mechanism. Another use of Yara is to determine phishing sites using a Regular Expression of key words,phrases and logos from company sites to detect malicious sites so that they can be reported.</p>
+        </details>
       </body>
