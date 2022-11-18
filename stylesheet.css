@@ -77,6 +77,7 @@ details:hover
 
 .return{
     text-align: center;
+    margin-top: 2%;
 }
 
 .return a{
@@ -90,7 +91,7 @@ details:hover
         width: 100%;
         height: fit-content;
         position:absolute;
-        top:12.5%;
+        top:10%;
         padding-bottom:5%;
     }
 
@@ -111,7 +112,7 @@ details:hover
     }
 
     .return{
-        margin-top: 1.2rem;
+        margin-top: 1%;
         margin-bottom: 1rem;
     }
   }
