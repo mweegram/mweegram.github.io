@@ -30,26 +30,24 @@
 
         <details>
             <summary>USB Rubber Ducky forensicator</summary>
+            <p></p>
         </details>
         <details>
             <summary>Endpoint Detection and Response Alert Forwarder</summary>
         </details>
         <details>
-            <summary>Incident Ticket Efficiency Monitor</summary>
-        </details>
-        <details>
             <summary>Network Architecture and Implementation</summary>
+            <p>As part of the module Network Technology 3 (3rd of Year University), I was tasked with implemententing a multi-site network to an exact specification. The network spanned three sites, supported by an MPLS cloud. Connectivity between sites was achieved with an MPLS VPN which tranferred VPN traffic from RIPv2 Traffic to MPLS and vice versa to achieve connectivty over the MPLS cloud.</p>
+            <p>Each network site had two subnets, which had to be addressed efficiently. As part of the task, I had to model network performance and latency to find the most efficient positioning of a SFTP server. Multiple Access Control Lists (ACLs) were deployed to control network flow and prevent access between specific hosts or prevent access to the SFTP server.</p>
+            <p>Some links between subnets had the potential to transfer confidential data, as such IPSec was needed as it would allow encryption between two points or down a tunnel. I was able to configure AES-256 (the strongest encryption algorithm on the version of Cisco IOS) to hit this criteria. IPSec also provided data integrity through a HMAC function using SHA (Secure Hashing Algorithm).</p>
         </details>
         <details>
             <summary>Specialist Ticketing System for Cyber Incidents (Final Year Research Project)</summary>
         </details>
         <details>
-            <summary>Service Deployment and Penetration Test</summary>
-        </details>
-        <details>
             <summary>Internet of Things-based Room Booking</summary>
-        </details>
-        <details>
-            <summary>Powershell Automation (Network Adapaters)</summary>
+            <p>As part of an Internet of Things (IoT) module, me and a group of others had to think up, plan and create a IoT solution to a real-world problem. The problem that my team elected to solve was based around collaborative, smart learning and working spaces. Our solution was a IoT room booking system with a Web API and Raspberry Pi with RFID scanning and an LCD (16x2) screen.</p>
+            <p>My role in this task was to create the scripts for the rapberry pi (scripts were written in Python 3+) which allowed the Pi to communicate with the backend API, the RFID scanner and display appropriate content based on bookings to the LCD screen. The Pi would check RFID cards and permit people to enter a room by opening a Solenoid lock if they were the correct room booker.</p>
+            <p>Once we had completed the project, i decided to ask permission from the API owner to test their server (self-hosted cloud deployment), using Kali Linux. I was able to provide a vulnerability scan and provide suggestions to improve security such as updating out-of-date web server software (Apache) as it was vulnerable.</p>
         </details>
       </body>
