@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="titlebar" style="text-align:center;"><h3>[MikeOS - /Home/Skills/] - New Terminal Window</h3></div>
+    <div class="titlebar" style="text-align:center;"><h3>[MikeOS - /Home/Projects/] - New Terminal Window</h3></div>
     <div class="content">
       <div class="return"><a href="../index.html">Press Here to Return to Home</a></div>
         <pre><p style="color:darkturquoise;">
@@ -29,25 +29,65 @@
         <p><span style="color:pink;">Personal/Professional</span> Projects:</p>
 
         <details>
-            <summary>USB Rubber Ducky forensicator</summary>
-            <p></p>
+            <summary>USB Rubber Ducky Forensicator</summary>
+            <p><span style="font-weight:bold;color:lightgreen;">Technologies:</span> Python, PyUSB (module for working with USB devices, at a low level), Raspberry Pi, Ubuntu</p>
+            <p>During my placement I was tasked with creating a script/device that could investigate USB devices that were handed in at receptions of buildings. The purpose of the device specifically was to deduce if a device was a USB rubber ducky (see Hak5 Rubbery Ducky for further details as to what these are) and capture its payload to negate any potential damage that could be caused.</p>
+            <p>The script would create an inescapable text entry and take any input, generating a report after a set period of time. If nothing was typed, the device was deemed safe. My approach to the task was to assume that devices that were not deemed to be USB rubber duckies were safe enough to be manually investigated (by a fellow or more senior analyst) on the sacrificial Raspberry Pi we had.</p>
+            <p>The resources to carry out this task didn't arrive, so this project was carried out in my own time with my own Pi and then provided to to another analyst to add the finishing touches, however in test scenarios the script worked each time.</p>
         </details>
+        
         <details>
             <summary>Endpoint Detection and Response Alert Forwarder</summary>
+            <p><span style="font-weight:bold;color:lightgreen;">Technologies:</span> Splunk, EDR, SIEM</p>
+            <p>As part of my role as a Cyber Security Analyst, one task I was given was to integrate a new EDR tool into the current ticketing workflow, by generating a SIEM alert that would generate a ticket and point to the new EDR's data. The task was out of my comfort zone at the time but I took on the task so that I could leave my mark and prove what I was capable of.</p>
+            <p>Although the task may seem simple, there were many caveats and edge cases that had to be dealt with. Eventually the alerting search had to be adjusted to allow two different sourcetypes and deal with them both different as they both provided different data. Incident deduplication was also added to prevent multiple alerts triggering from one set of events.</p>
         </details>
+        
         <details>
             <summary>Network Architecture and Implementation</summary>
+            <p><span style="font-weight:bold;color:lightgreen;">Technologies:</span> GNS3, MPLS, MPLS VPN, IPSec, RIPv2, SFTP, Access Control Lists, Cisco IOS</p>
             <p>As part of the module Network Technology 3 (3rd of Year University), I was tasked with implemententing a multi-site network to an exact specification. The network spanned three sites, supported by an MPLS cloud. Connectivity between sites was achieved with an MPLS VPN which tranferred VPN traffic from RIPv2 Traffic to MPLS and vice versa to achieve connectivty over the MPLS cloud.</p>
             <p>Each network site had two subnets, which had to be addressed efficiently. As part of the task, I had to model network performance and latency to find the most efficient positioning of a SFTP server. Multiple Access Control Lists (ACLs) were deployed to control network flow and prevent access between specific hosts or prevent access to the SFTP server.</p>
             <p>Some links between subnets had the potential to transfer confidential data, as such IPSec was needed as it would allow encryption between two points or down a tunnel. I was able to configure AES-256 (the strongest encryption algorithm on the version of Cisco IOS) to hit this criteria. IPSec also provided data integrity through a HMAC function using SHA (Secure Hashing Algorithm).</p>
         </details>
+        
         <details>
             <summary>Specialist Ticketing System for Cyber Incidents (Final Year Research Project)</summary>
+            <p><span style="font-weight:bold;color:lightgreen;">Technologies:</span> Python, Flask, HTML, CSS, Jinja, SQL (SQLite3), SMTP, IMAP and Regular Expressions</p>
+            <p>As part of my final year project (Dissertations + Deliverable Software), I decided that I was going to make a Cyber Security Incident Ticket Management System to help combat issues like Alert Fatigue and improve analyst efficiency, with the hopes of reducing to Time to Triage and Time to Incident Resolution. Since I have worked with ticketing systems in the past, I was able to spot areas for potential improvement and implement solutions in a time and resource effective manner.</p>
+            <p>Some of the improvements made include: automatic detection of key information such as IP addresses, MAC addresses and emails at alert creation with automatic relationship generation, mapping to an incident response framework (NIST) and analytics to show details of analyst efficiency and point to areas of weakness such as high false positive ratings.</p>
+            <p>The ticketing system was created with a function over form approach, however with improvements to visuals and perhaps a dedicated database server as opposed to a local database, I belive the system would be ready for deployment in a small scale Security Operations Centre (SOC).</p>
         </details>
+        
         <details>
             <summary>Internet of Things-based Room Booking</summary>
+            <p><span style="font-weight:bold;color:lightgreen;">Technologies:</span> Python, PHP, SQL, API, IoT, GPIO, Microcontrollers, TLS, Electronics and RFID.</p>
             <p>As part of an Internet of Things (IoT) module, me and a group of others had to think up, plan and create a IoT solution to a real-world problem. The problem that my team elected to solve was based around collaborative, smart learning and working spaces. Our solution was a IoT room booking system with a Web API and Raspberry Pi with RFID scanning and an LCD (16x2) screen.</p>
             <p>My role in this task was to create the scripts for the rapberry pi (scripts were written in Python 3+) which allowed the Pi to communicate with the backend API, the RFID scanner and display appropriate content based on bookings to the LCD screen. The Pi would check RFID cards and permit people to enter a room by opening a Solenoid lock if they were the correct room booker.</p>
             <p>Once we had completed the project, i decided to ask permission from the API owner to test their server (self-hosted cloud deployment), using Kali Linux. I was able to provide a vulnerability scan and provide suggestions to improve security such as updating out-of-date web server software (Apache) as it was vulnerable.</p>
         </details>
+
+        <details>
+          <summary>Service Deployment, Testing and Hardening</summary>
+          <p><span style="font-weight:bold;color:lightgreen;">Technologies:</span> MySQL, HTTP, Apache, FTP, SMTP, ParrotOS Security, Windows Server and Ubuntu Server</p>
+          <p>As part of the Security Case Project module in my second year of University, I was tasked with deploying multiple services to Windows and Ubuntu server (2 on each). After the initial set-up of each of the services, I then had to test them and show a way that each of them could be attacked. The services I used were HTTP (which I attacked using a Denial of Service Attack), SMTP (which I attacked with a Man in the Middle capture attack), MySQL (which I attacked with SQL Injection) and FTP (which I attacked with a Password Bruteforce and also an Anonynmous Login).</p>
+          <p>After demonstrating the attacks on each of the servers that I had set up, I then created a writeup to explain the attacks and suggest ways that the services that I had deployed could be improved to prevent attacks like the ones I had tested from working again in the future, such as stronger passwords and disabling anonymous login for FTP and ddos protection like Cloudflare for HTTP.</p>
+          <p>One difficulty with this project was that it was intended to be a four person task, however upon reaching out to my team it was clear they were unwilling to help or were simply no longer on my course. So I had to tackle the task alone, this module got me the highest mark that I achieved at University.</p>
+        </details>
+
+        <details>
+          <summary>(Not So) Simple Anti-Malware</summary>
+          <p><span style="font-weight:bold;color:lightgreen;">Technologies: </span>C# (CSharp), WPF (Windows Presentation Foundation)
+          <p>To try and merge my interests in Programming and Cyber Security I decided I would try and make a basic Any-Malware system that took a list of malicious file hashes (MD5) and would search for matches in a set directory. This project formed the basis of the simple anti-malware, which I built upon to create more advanced iterations. This project allowed me to become more familiar with C# and the features of Object Oriented Programming in a "Solutions" language, as opposed to my usual Scripting language, Python.</p>
+          <p>The more advanced versions of the software would use a feature of C# called FileSystemWatcher, which would detect changes in file systems and would only check new files after the initial scan to reduce duplicated effort. Since I did not want to have to download malicious files, this was tested by adding hashes of local files to the database of malicious files.</p>
+          <p>To make the code more user friendly, a GUI was created using WPF, allowign the user to start scans and see the results live on the GUI, with clean files marked green and detections marked red. I did add the option to delete files, however this was not enabled by default to prevent the dummy files from being removed as they weren't malicious in my test cases.</p>
+        </details>
       </body>
+
+      <details>
+        <summary>SIEM Alert Tuning</summary>
+        <p><span style="font-weight:bold;color:lightgreen;">Technologies: </span>Splunk, SIEM, Ticketing Systems, JIRA
+        <p>As part of my placement I was tasked to improve the efficiency of an alert that was generating a high percentage of False Positive alerts (Alert generated for non-malicious behaviour). The process for making this change and increasing the efficiency of this search/alert was to make sure I understood the purpose of the search what it was intended to capture as well as what activity it is currently capturing and the false positives that it causes.</p>
+        <p>After becoming familiar with the search syntax I was able to spot the keyword matches that were causing the issue of frequent triggering on non-malicious behaviour and as such I was able to write in an exception to a particular log message (which caused a lot of the misfires of the alerts due to containing the name of some common attack vectors and scripts), thus reducing the amount of false positives for a particular common alert by more than half.</p>
+        <p>There were many similar mini-projects that involved tuning alerts, we had a JIRA board for managing projects like this so I have also become familiar with project and task managment and delegation using JIRA as well as terms such as Sprint.</p>
+      </details>
