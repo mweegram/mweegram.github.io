@@ -7,27 +7,14 @@
 </head>
 
 <body>
-    <div class="titlebar" style="text-align:center;"><h3>[MikeOS - /Home/Skills/] - New Terminal Window</h3></div>
-    <div class="content">
-      <div class="return"><a href="../index.html">Press Here to Return to Home</a></div>
-        <pre><p style="color:darkturquoise;">
-          888b     d888 8888888 888    d8P  8888888888        .d88888b.   .d8888b.  
-          8888b   d8888   888   888   d8P   888              d88P" "Y88b d88P  Y88b 
-          88888b.d88888   888   888  d8P    888              888     888 Y88b.      
-          888Y88888P888   888   888d88K     8888888          888     888  "Y888b.   
-          888 Y888P 888   888   8888888b    888              888     888     "Y88b. 
-          888  Y8P  888   888   888  Y88b   888              888     888       "888 
-          888   "   888   888   888   Y88b  888              Y88b. .d88P Y88b  d88P 
-          888       888 8888888 888    Y88b 8888888888        "Y88888P"   "Y8888P"              
-        </p></pre>
-        <details id="Note">
-          <summary>Important Note</summary>
-          <p>Through a service called Immersive Labs (I'll now refer to it as IL), I was given access to a vast quantity of training labs. This site creates practical example scenarios in which you must complete challenges within a virtual environment, like a Capture-The-Flag but for Blue Teamers and Defensive minded individuals. On Immersive Labs there are hundreds of Labs, with everything I could need and more so, expect to see it mentioned a lot! As someone with relatively low exposure to the Cyber industry, these labs have allowed me to gain almost industry level experience and skills with some tools and experience using them in simulated scenarios, which I wouldn't have been exposed to otherwise!</p>
-        </details>
-
-        <p>User@MikeOS:~/Home/Skills/$ cat Skills_Blue_Team.txt</p>
-        <p><span style="color:darkturquoise">Blue</span> Team Skills:</p>
-        
+    <div class="mainbox">
+      <div class="headbox">
+        <h2><span style="color:darkblue">Blue</span> Team Skills</h2>
+    </div>
+    <ul class="nav">
+        <li><a href="../index.html">Press Here to Return to the Home Page</a></li>
+    </ul>
+    <div style="margin-left:1.5%;padding-bottom: 1rem;">
         <details>
           <summary>Log Reading and Analysis</summary>
           <p>Working as a Cyber Security Analyst, I have read a lot of logs and have a good eye for spotting behaviour that deviates from what is expected and classes as 'business as usual'. I can read both Windows and Linux logs (important as the main two OS families) and interpret what has happened whether that be a password change or a file download.</p>
@@ -86,7 +73,8 @@
         </details>
         
         <details>
-          <summary>YARA</summary>
+          <summary>YARA Rules</summary>
           <p>Using IL, I have been able to gain experience in using Yara to create rulesets/regular expressions to detect and indentify malicious software. Although I have not yet had chance to use Yara at work, the applications of the software in a SOC environment are plentiful. Yara can be used to help an Incident Responder determine what software has been downloaded onto a client machine. Yara can also be used as a proactive defense mechanism. Another use of Yara is to determine phishing sites using a Regular Expression of key words,phrases and logos from company sites to detect malicious sites so that they can be reported.</p>
         </details>
+      </div>
       </body>

@@ -1,118 +1,82 @@
-
 body
 {
     background-color: #393e4d;
     font-family:'Inconsolata';
-    color: ghostwhite;
+    color: black;
     margin: 0px auto;
 }
 
-.titlebar
+.mainbox
 {
-    background-color: #74798a;
-    width:100%;
-    position: absolute;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 7rem;
+    background-color: #D7F9FF;
+    outline: 3px solid black;
+    border-radius: 2px;
 }
 
-.content
+.headbox
 {
-    top:7.5%;
     width: 100%;
-    height: fit-content;
-    position:absolute;
-}
-
-.content p
-{
-    color: lightgray;
-    padding-left: 2.5%;
-    font-weight: 550;
-    max-width: 50%;
-}
-
-li
-{
-    padding-left: 5%;
-    font-weight: 550;
-    max-width: 20%;
-    display: block;
+    background-color: #4F646F;
     text-align: center;
-    padding-left: 32px;
-    padding-right:16px;
-    text-decoration: none;
-    float: left;
-
+    font-family: sans-serif;
+    padding-top: 0.01rem;
+    padding-bottom: 0.01rem;
+    border-bottom: 3px solid black;
+    color: ghostwhite;
 }
 
-.content ul
+.nav
 {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    color:limegreen;
+    margin-top: 1rem;
+    margin-inline: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-a
+.nav li
 {
-    color: limegreen;
+    background-color: #393e4d;
+    display: flex;
+    padding: 0.5rem;
+    border: 2px solid #4F646F;
+    text-align: center;
+    width: 12rem;
+    justify-content: center;
 }
 
-a:hover
+.nav a
 {
-    color: red;
+    text-decoration: none;
+    color: ghostwhite;
 }
 
-details
+.nav a:hover
 {
-    padding-left:3%;
-    color: cornflowerblue;
-    margin-bottom:2em;
+    color: #4F646F;
 }
 
-details:hover
+.mainbox summary
+{
+    margin-top: 1rem;
+    color: #393e4d;
+    list-style: none;
+    padding: 1rem;
+    background-color: #C9CAD9;
+    display: inline-block;
+    border: 2px solid #4F646F;
+}
+
+.mainbox summary:hover
 {
     color:red;
+    cursor: pointer;
 }
-
-.return{
-    text-align: center;
-    margin-top: 2%;
-}
-
-.return a{
-    background-color:#74798a;
-    padding: 0.5em;
-    border-radius:30px;
-}
-
-@media only screen and (max-width: 600px) {
-    .content{
-        width: 100%;
-        height: fit-content;
-        position:absolute;
-        top:10%;
-        padding-bottom:5%;
-    }
-
-    .content p {
-        color: lightgray;
-        padding-left: 2.5%;
-        font-weight: 550;
-        max-width: 100%;
-        padding-right: 2.5%;
-    }
-    pre
-    {
-        display: none;
-    }
-    
-    .content li{
-        padding-top: 5%;
-    }
-
-    .return{
-        margin-top: 2em;
-        margin-bottom: 1rem;
-    }
-  }
