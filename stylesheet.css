@@ -80,3 +80,19 @@ body
     color:red;
     cursor: pointer;
 }
+
+details a
+{
+    padding: 1rem;
+    background-color: #4F646F;
+    display: inline-block;
+    border: 2px solid #C9CAD9;
+    text-decoration: none;
+    color: ghostwhite;
+    margin-inline: 2rem;
+}
+
+details a:hover
+{
+    color: red;
+}

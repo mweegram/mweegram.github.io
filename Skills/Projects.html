@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Mike OS</title>
+    <title>Michael Weegram</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link href="../stylesheet.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,16 @@
     <ul class="nav">
         <li><a href="../index.html">Press Here to Return to the Home </a></li>
     </ul>
-    <div style="margin-left:1.5%;padding-bottom: 1rem;">
+    <div style="margin-left:1.5%;padding-bottom: 1rem;margin-bottom: 2rem;">
+
+        <details>
+            <summary>Specialist Ticketing System for Cyber Incidents (Final Year Research Project)</summary>
+            <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> Python, Flask, HTML, CSS, Jinja, SQL (SQLite3), SMTP, IMAP and Regular Expressions</p>
+            <p>As part of my final year project (Dissertations + Deliverable Software), I decided that I was going to make a Cyber Security Incident Ticket Management System to help combat issues like Alert Fatigue and improve analyst efficiency, with the hopes of reducing to Time to Triage and Time to Incident Resolution. Since I have worked with ticketing systems in the past, I was able to spot areas for potential improvement and implement solutions in a time and resource effective manner.</p>
+            <p>Some of the improvements made include: automatic detection of key information such as IP addresses, MAC addresses and emails at alert creation with automatic relationship generation, mapping to an incident response framework (NIST) and analytics to show details of analyst efficiency and point to areas of weakness such as high false positive ratings.</p>
+            <p>The ticketing system was created with a function over form approach, however with improvements to visuals and perhaps a dedicated database server as opposed to a local database, I belive the system would be ready for deployment in a small scale Security Operations Centre (SOC).</p>
+        </details>
+
         <details>
             <summary>USB Rubber Ducky Forensicator</summary>
             <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> Python, PyUSB (module for working with USB devices, at a low level), Raspberry Pi, Ubuntu</p>
@@ -24,6 +33,25 @@
         </details>
         
         <details>
+          <summary>Firewall, SIEM and IDS Home Lab</summary>
+          <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> pfSense, Firewall, IDS, IPS, Nessus, DHCP, DNS, VMWare Workstation and Ubuntu Server.</p>
+          <p>To get a better understanding of commonly used security technologies, I decided to create a simulation homelab incorporating all of the tools into one (simulated) corporate network. The network was built from the ground up with considerations such as an appropriate Subnet Mask (/27 was used).</p>
+          <p>This project proved useful because not only can I work with these technologies, I can now set them up and tune them to a level appropriate to the business context (such as turning alerts on or off). This process provided me with a technical understanding of how all these systems work and also work together.</p>
+          <p>For further details, please read the report linked below:</p>
+          <a href="../Reports/siemlab.pdf">Click Here to View Report</a>
+        </details>
+
+        <details>
+          <summary>Corporate Network Architecture Consultancy Project</summary>
+          <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> DNS (and Dynamic DNS), DHCP, Active Directory and VMWare Workstation</p>
+          <p>This project was completed as part of the Advanced Operating Systems 2 module of my final year of University. The project required a full virtual network to be created from planning to completion, including the deployment of multiple network services. The first step taken as part of this project was to create full network plans including a logical network diagram, physical network diagram and IP addressing table for two /25 (126 Hosts each) networks spanning two geographical locations.</p>
+          <p>DNS was deployed for the company, providing a forward and reverse zone for each non-user system on the network. The DNS configuration consisted of one master server and two worker servers, the master could only be queries from the workers or the domain controller. Using DHCP, Dynamic DNS was introduced to allow Active Directory to add entries to the DNS databases.</p>
+          <p>The networks had one primary DHCP server, with a failover peer in the case that the primary failed. The other site had a DHCP relay that would forward requests to and from the primary DHCP servers, providing multiple IP addressing pools and also site relevant static IP Addresses for network services.</p>
+          <p>Next, Active Directory was introduced with one primary Domain Controller and two Backup domain controllers (set to read-only), this proved problematic while trying to get AD working with DDNS, however this was solved after many hours by changing the name of the DC to the name used in the DC's DNS A record.</p>
+          <p>The company used in this assesment stated they had both Windows and Linux client machines, Windows was simple to add to AD but Linux took a bit more work, having to use Powerbroker Identity Services (PBIS).</p>
+        </details>
+
+        <details>
             <summary>Endpoint Detection and Response Alert Forwarder</summary>
             <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> Splunk, EDR, SIEM</p>
             <p>As part of my role as a Cyber Security Analyst, one task I was given was to integrate a new EDR tool into the current ticketing workflow, by generating a SIEM alert that would generate a ticket and point to the new EDR's data. The task was out of my comfort zone at the time but I took on the task so that I could leave my mark and prove what I was capable of.</p>
@@ -31,19 +59,11 @@
         </details>
         
         <details>
-            <summary>Network Architecture and Implementation</summary>
+            <summary>Network Architecture and Implementation (Routing and Switching)</summary>
             <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> GNS3, MPLS, MPLS VPN, IPSec, RIPv2, SFTP, Access Control Lists, Cisco IOS</p>
             <p>As part of the module Network Technology 3 (3rd of Year University), I was tasked with implemententing a multi-site network to an exact specification. The network spanned three sites, supported by an MPLS cloud. Connectivity between sites was achieved with an MPLS VPN which tranferred VPN traffic from RIPv2 Traffic to MPLS and vice versa to achieve connectivty over the MPLS cloud.</p>
             <p>Each network site had two subnets, which had to be addressed efficiently. As part of the task, I had to model network performance and latency to find the most efficient positioning of a SFTP server. Multiple Access Control Lists (ACLs) were deployed to control network flow and prevent access between specific hosts or prevent access to the SFTP server.</p>
             <p>Some links between subnets had the potential to transfer confidential data, as such IPSec was needed as it would allow encryption between two points or down a tunnel. I was able to configure AES-256 (the strongest encryption algorithm on the version of Cisco IOS) to hit this criteria. IPSec also provided data integrity through a HMAC function using SHA (Secure Hashing Algorithm).</p>
-        </details>
-        
-        <details>
-            <summary>Specialist Ticketing System for Cyber Incidents (Final Year Research Project)</summary>
-            <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> Python, Flask, HTML, CSS, Jinja, SQL (SQLite3), SMTP, IMAP and Regular Expressions</p>
-            <p>As part of my final year project (Dissertations + Deliverable Software), I decided that I was going to make a Cyber Security Incident Ticket Management System to help combat issues like Alert Fatigue and improve analyst efficiency, with the hopes of reducing to Time to Triage and Time to Incident Resolution. Since I have worked with ticketing systems in the past, I was able to spot areas for potential improvement and implement solutions in a time and resource effective manner.</p>
-            <p>Some of the improvements made include: automatic detection of key information such as IP addresses, MAC addresses and emails at alert creation with automatic relationship generation, mapping to an incident response framework (NIST) and analytics to show details of analyst efficiency and point to areas of weakness such as high false positive ratings.</p>
-            <p>The ticketing system was created with a function over form approach, however with improvements to visuals and perhaps a dedicated database server as opposed to a local database, I belive the system would be ready for deployment in a small scale Security Operations Centre (SOC).</p>
         </details>
         
         <details>
@@ -79,4 +99,5 @@
         <p>There were many similar mini-projects that involved tuning alerts, we had a JIRA board for managing projects like this so I have also become familiar with project and task managment and delegation using JIRA as well as terms such as Sprint.</p>
       </details>
     </div>
+
   </div>
