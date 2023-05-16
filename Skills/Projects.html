@@ -42,7 +42,7 @@
         </details>
 
         <details>
-          <summary>Corporate Network Architecture Consultancy Project</summary>
+          <summary>Corporate Network Architecture Deployment Project</summary>
           <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> DNS (and Dynamic DNS), DHCP, Active Directory and VMWare Workstation</p>
           <p>This project was completed as part of the Advanced Operating Systems 2 module of my final year of University. The project required a full virtual network to be created from planning to completion, including the deployment of multiple network services. The first step taken as part of this project was to create full network plans including a logical network diagram, physical network diagram and IP addressing table for two /25 (126 Hosts each) networks spanning two geographical locations.</p>
           <p>DNS was deployed for the company, providing a forward and reverse zone for each non-user system on the network. The DNS configuration consisted of one master server and two worker servers, the master could only be queries from the workers or the domain controller. Using DHCP, Dynamic DNS was introduced to allow Active Directory to add entries to the DNS databases.</p>
@@ -59,9 +59,18 @@
         </details>
         
         <details>
+          <summary>Malware Analysis</summary>
+          <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> Remnux, Mandiant FLARE VM, ProcMon, Wireshark, PEstudio, plus other Malware Analysis Tools</p>
+          <p>As part of my personal development, I undertook a course called 'Practical Malware Analysis and Triage' (PMAT) from TCM Academy. The course covered all major aspects of analysing live malware including Static and Dynamic analysis as well as how to work with malware safely and securely (changing file types to defang the file, zipping with password etc).</p>
+          <p>All analyses were carried out on a private VMware (host-only) network between a Windows 10 FLARE VM and a Remnux linux box, which was running INetSim.</p>
+          <p>The course provided independant challenges to test understanding throughout, this helped to consolidate learning as I progressed. As part of the course, I was able to learn many analysis tools (see technologies section for some specifics), I found using the tools to search for information and Indicators of Compromise to be fascinating, as well as learning about how different Windows API functions work with malware (plus their Mitre Att&ck mappings).</p>
+          <a href="../Reports/MalAnRep.pdf">Click Here to View An Example Report</a>
+      </details>
+
+        <details>
             <summary>Network Architecture and Implementation (Routing and Switching)</summary>
             <p><span style="font-weight:bold;color:#2274A5;">Technologies:</span> GNS3, MPLS, MPLS VPN, IPSec, RIPv2, SFTP, Access Control Lists, Cisco IOS</p>
-            <p>As part of the module Network Technology 3 (3rd of Year University), I was tasked with implemententing a multi-site network to an exact specification. The network spanned three sites, supported by an MPLS cloud. Connectivity between sites was achieved with an MPLS VPN which tranferred VPN traffic from RIPv2 Traffic to MPLS and vice versa to achieve connectivty over the MPLS cloud.</p>
+            <p>As part of the module Network Technology 3 (3rd Year of University), I was tasked with implemententing a multi-site network to an exact specification. The network spanned three sites, supported by an MPLS cloud. Connectivity between sites was achieved with an MPLS VPN which tranferred VPN traffic from RIPv2 Traffic to MPLS and vice versa to achieve connectivty over the MPLS cloud.</p>
             <p>Each network site had two subnets, which had to be addressed efficiently. As part of the task, I had to model network performance and latency to find the most efficient positioning of a SFTP server. Multiple Access Control Lists (ACLs) were deployed to control network flow and prevent access between specific hosts or prevent access to the SFTP server.</p>
             <p>Some links between subnets had the potential to transfer confidential data, as such IPSec was needed as it would allow encryption between two points or down a tunnel. I was able to configure AES-256 (the strongest encryption algorithm on the version of Cisco IOS) to hit this criteria. IPSec also provided data integrity through a HMAC function using SHA (Secure Hashing Algorithm).</p>
         </details>
@@ -91,13 +100,6 @@
         </details>
       </body>
 
-      <details>
-        <summary>SIEM Alert Tuning</summary>
-        <p><span style="font-weight:bold;color:#2274A5;">Technologies: </span>Splunk, SIEM, Ticketing Systems, JIRA
-        <p>As part of my placement I was tasked to improve the efficiency of an alert that was generating a high percentage of False Positive alerts (Alert generated for non-malicious behaviour). The process for making this change and increasing the efficiency of this search/alert was to make sure I understood the purpose of the search what it was intended to capture as well as what activity it is currently capturing and the false positives that it causes.</p>
-        <p>After becoming familiar with the search syntax I was able to spot the keyword matches that were causing the issue of frequent triggering on non-malicious behaviour and as such I was able to write in an exception to a particular log message (which caused a lot of the misfires of the alerts due to containing the name of some common attack vectors and scripts), thus reducing the amount of false positives for a particular common alert by more than half.</p>
-        <p>There were many similar mini-projects that involved tuning alerts, we had a JIRA board for managing projects like this so I have also become familiar with project and task managment and delegation using JIRA as well as terms such as Sprint.</p>
-      </details>
     </div>
 
   </div>
